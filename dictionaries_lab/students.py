@@ -10,10 +10,9 @@ while ":" in message:
         dictionary[student_course][student_id] = student_name
 
     message = input()
+
 message = message.replace("_", " ")
-students = dictionary[message]
 
-for key, value in students.items():
+for key, value in dictionary[message].items():
     print(f"{value} - {key}")
-
 
